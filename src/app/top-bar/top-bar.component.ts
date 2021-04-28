@@ -1,4 +1,16 @@
+import {NgModule} from '@angular/core';
 import { Component } from '@angular/core';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
+@NgModule({
+  exports: [
+    MatButtonModule,
+    MatMenuModule,
+    MatButtonToggleModule,
+  ]
+})
 
 @Component({
   selector: 'app-top-bar',
@@ -8,10 +20,3 @@ import { Component } from '@angular/core';
 export class TopBarComponent {
 
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

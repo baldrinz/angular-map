@@ -1,15 +1,19 @@
-<div>
-    <div>
-        <label for="latitude">Latitude:</label>
+<table style="width:100%">
+  <tr>
+    <th>
+        <label for="latitude">Latitude</label>
         <input id="latitude" type="number" [(ngModel)]="latitude" placeholder="Latitude">
-    </div>
+    </th>
 
-    <div>
+    <th>
         <label for="longitude">Longitude:</label>
         <input id="longitude" type="number" [(ngModel)]="longitude" placeholder="Longitude">
-    </div>
-    <button (click)="setCenter()">Go</button>
-</div>
+    </th>
+    <th>
+      <button mat-flat-button (click)="setCenter()">Go </button>
+    </th>
+  </tr>
+</table>
 <br>
 <div id="map" class="map"></div>
 <div id="mouse-position"></div>
